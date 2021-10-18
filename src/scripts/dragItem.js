@@ -37,7 +37,6 @@ export class DragItem {
     event.dataTransfer.setData('text/plain', null);
     event.dataTransfer.dropEffect = 'copy';
     this._setDraggedItem(this._index);
-    console.log(event)
   }
   _dragEnd(event) {
     this.classList.remove('is_dragging');

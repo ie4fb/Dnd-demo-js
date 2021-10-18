@@ -18,7 +18,7 @@ export class DropZone {
       item.classList.add('moved');
       document.querySelector('.drop_zone').append(item);
     } else {
-        document.querySelector('.drop_zone').insertBefore(item, hoveredElement)
+      document.querySelector('.drop_zone').insertBefore(item, hoveredElement);
     }
   }
   _setEventListeners(element, elements) {
@@ -38,10 +38,8 @@ export class DropZone {
   }
   _dragEnter(event) {
     event.preventDefault();
-    event.target.classList.add('drag-over');
   }
   _dragOver(event) {
     event.preventDefault();
-    event.target.classList.add('drag-over');
   }
 }
