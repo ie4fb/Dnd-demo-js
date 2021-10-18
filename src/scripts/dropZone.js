@@ -20,6 +20,7 @@ export class DropZone {
     } else {
       document.querySelector('.drop_zone').insertBefore(item, hoveredElement);
     }
+    document.querySelector('.counter').textContent = document.querySelector('.drop_zone').querySelectorAll('.drag_item').length
   }
   _setEventListeners(element, elements) {
     element.addEventListener('drop', (e, elements) =>
