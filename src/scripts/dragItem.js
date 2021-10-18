@@ -19,7 +19,6 @@ export class DragItem {
     this._element.querySelector('.drag_item').id = this._index;
     this._element.querySelector('.text').textContent = this._index;
     this._element.querySelector('.drag_item').shape = this._element.querySelector('.drag_item').classList[0];
-    console.log(this._element.querySelector('.drag_item').classList);
     return this._element;
   }
   _setEventListeners() {
